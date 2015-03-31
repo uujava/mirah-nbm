@@ -290,7 +290,7 @@ public class MirahLexer implements Lexer<MirahTokenId>{
         if ( tok == null ){
             alreadyStarted = false;
             try {
-                tok = lexer.lex(lastPos, false);
+                tok = lexer.lex(lastPos);
                 
                 
             } catch ( Exception npe ){
